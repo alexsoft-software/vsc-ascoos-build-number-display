@@ -1,0 +1,36 @@
+{
+    "name": "ascoos-build-number-display",
+    "displayName": "Ascoos Build Number Display",
+    "description": "Display the current build number from .versions/lastBuild.json in the status bar.",
+    "version": "1.0.0",
+    "publisher": "alexsoft-software",
+    "icon": "images/ascoos.png",
+    "license": "AGL-F (Ascoos General License - Free)",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "workspaceContains:.versions/lastBuild.json"
+    ],
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "properties": {
+                "buildNumberDisplay.format": {
+                    "type": "string",
+                    "default": "Build: {number}",
+                    "description": "Customize the format of the build number display. Use {number} as a placeholder for the build number."
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "extension.refreshBuildNumber",
+                "title": "Refresh Build Number"
+            }
+        ]
+    }
+}
+
+

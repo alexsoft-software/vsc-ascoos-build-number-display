@@ -1,0 +1,6 @@
+{
+  "buildNotAvailable": "Κατασκευή: Δεν είναι διαθέσιμη",
+  "buildError": "Κατασκευή: Σφάλμα",
+  "fileMissing": "Το αρχείο '.versions/lastBuild.json' λείπει.",
+  "noWorkspace": "Δεν είναι ανοιχτός κανένας φάκελος εργασίας."
+}

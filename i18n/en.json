@@ -1,0 +1,6 @@
+{
+  "buildNotAvailable": "Build: Not Available",
+  "buildError": "Build: Error",
+  "fileMissing": "The file '.versions/lastBuild.json' is missing.",
+  "noWorkspace": "No workspace folder is open."
+}
